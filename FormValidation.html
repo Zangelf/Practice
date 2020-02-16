@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left:25%; margin-right: 25%; margin-top:5%;">
+    <fieldset>
+        <form onsubmit="return.Validate()">
+            <br><label id="eventType" >Event Type: <select name="Event">
+                <option value="event1">Event Type 1</option>
+                <option value="event2">Event Type 2</option>
+                <option value="event3">Event Type 3</option>
+            </select>
+            <br><br></label>
+            <label>Event Title: <input type="text" id ="eventTitle" size="50" maxlength="80" required><br><br></label>
+            <label>
+                <label>Event Dates: <input type="date" required> to <input type="date" required></label>
+            <br><br></label>
+            <label>Posting Date: <input type="date" id="date" required><br><br> </label>
+            <label> <input type="checkbox" id="regReq"> Is Registration Required?<br><br></label>
+            <label> <input type="checkbox" id="famProg"> Is this event associated with any Family Programs?<br><br></label>
+            <label> <input type="checkbox" id="UponComp"> Upon Registration Completion, Are Users to recieve an Auto Generated Emamil?<br><br></label>
+            <label> <input type="checkbox" id="PointContract"> Is There a point of Contact?<br><br></label>
+            <label> <input type="checkbox" id="Hosting"> Is There a Hosting command Point of Contact<br><br></label><br>
+            <div style="margin-left:25%;">
+                <input type="submit" value ="Submit" id="submit"> <input type ="reset" value ="Reset"><br><br><br>
+            </div>
+        </form>
+    </fieldset>
+
+
+</body>
+</html>
